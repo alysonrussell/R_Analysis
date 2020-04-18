@@ -1,0 +1,29 @@
+## Challenge 15 Write Up
+
+
+# MechaCar Linear Regression
+
+Using linear regression on the MechaCar data, we see that Vehicle Length and Ground Clearance had a significant non-random amount of variance on mpg.  The Vehicle Weight also contributed some variance, but not a significant amount.
+
+The slope of the linear model is not zero because the p-value was less than 0.05, the level we are using to judge significance.
+
+We see that Multiple R-Squared is equal to approximately 0.7, meaning that this linear model can predict the mpg correctly about 70% of the time.
+
+
+# Suspension Coil Summary
+
+Looking at the data for the suspension coils, we see that the Mean and Median PSI are very close to each other (1498.78 and 1500 respectively).  The variance is just over 62 and the standard deviation is slightly under 8.  Since the design specs require that the variance must be less than 100, these lots do meet the specification.
+
+
+# Suspension Coil T-test
+
+By performing a t-test on the suspension coil data, we do not see that the PSI is statistically different than the mean of the population.  The mean of x is 1498.78 and the p-value is 0.06, which is above the significant level for us to make this conclusion.
+
+
+# Design Your Own Study
+
+Car purchasers that are interested in the performance metrics of a car will almost always be interested in acceleration metrics such as the time it would take to reach 60 mph from standing still.
+
+This information should be widely available across car manufacturers, as this is usually a selling point to interested purchasers and is well advertised.
+
+To determine if MechaCar is statistically different in the ability to accelerate quickly, we could do a one-sample t-test.  Our null hypothesis would be that there is no significant difference between MechaCar and other manufacturers, and our alternative hypothesis would be that there is a significant difference.  We would test data from MechaCar vehicles as well as data from other car manufacturers.
